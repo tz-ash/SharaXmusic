@@ -1,7 +1,26 @@
-from .Apple import AppleAPI
-from .Carbon import CarbonAPI
-from .Resso import RessoAPI
-from .Soundcloud import SoundAPI
-from .Spotify import SpotifyAPI
-from .Telegram import TeleAPI
-from .Youtube import YouTubeAPI
+from SharaXmusic.core.bot import Anony
+from SharaXmusic.core.dir import dirr
+from SharaXmusic.core.git import git
+from SharaXmusic.core.userbot import Userbot
+from SharaXmusic.misc import dbb, heroku
+
+from .logging import LOGGER
+
+dirr()
+git()
+dbb()
+heroku()
+
+app = Anony()
+userbot = Userbot()
+
+
+from .platforms import *
+
+Apple = AppleAPI()
+Carbon = CarbonAPI()
+SoundCloud = SoundAPI()
+Spotify = SpotifyAPI()
+Resso = RessoAPI()
+Telegram = TeleAPI()
+YouTube = YouTubeAPI()
