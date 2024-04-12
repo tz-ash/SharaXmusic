@@ -109,5 +109,4 @@ async def autoapprove(client: app, message: ChatJoinRequest):
                 ]
             ),
     )
-
-  
+    
